@@ -3,3 +3,5 @@ numpy
 pandas
 PyPDF2
 python-docx
+reportlab
+Pillow
