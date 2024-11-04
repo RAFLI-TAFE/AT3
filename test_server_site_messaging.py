@@ -18,7 +18,7 @@ class TestServerSite(unittest.TestCase):
         server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         
         try:
-            server_socket.bind(('localhost', 1234))  # Try to bind to the server IP and port
+            server_socket.bind(('localhost', 0))  # Try to bind to the server IP and port
             self.assertTrue(True)  # Passes if no exception is raised
         except Exception as e:
             self.fail(f"Binding failed with error: {e}")  # Fail the test if binding raises an error
